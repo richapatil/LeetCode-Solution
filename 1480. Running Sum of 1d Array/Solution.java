@@ -1,12 +1,22 @@
 class Solution {
   
-    public int[] runningSum(int[] nums) {
-        
-        for(int i = 1; i < nums.length; i++){
+    public static int[] runningSum(int[] nums) {
 
-            nums[i] = nums[i] + nums[i-1];
+        if (nums.length == 1) {
 
+            return nums;
+
+        } else {
+
+            for (int i = 0; i < nums.length; i++) {
+
+                if (i != 0) {
+                    nums[i] = nums[i - 1] + nums[i];
+                }
+            }
+            return nums;
         }
-        return nums;
     }
 }
+
+//Time Complexity - O(n) (One For Loop)
