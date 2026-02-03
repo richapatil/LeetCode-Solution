@@ -15,5 +15,5 @@ class Solution {
     }
 }
 
-//TC - O(n)
-//SC - O(1)
+//TC - O(n) -- for loop
+//SC - O(n) -- Intializing a new array
